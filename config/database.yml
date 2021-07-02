@@ -23,7 +23,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide # https://guides.rubyonrails.org/configuring.html#database-pooling pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # For details on connection pooling, see Rails configuration guide # https://guides.rubyonrails.org/configuring.html#database-pooling 
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: railstut_production
   username: railstut
   password: <%= ENV['RAILSTUT_DATABASE_PASSWORD'] %>
