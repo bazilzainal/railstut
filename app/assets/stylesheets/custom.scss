@@ -144,6 +144,7 @@ aside {
 
 
 /* footer */
+
 footer {
     margin-top: 45px;
     padding-top: 5px;
@@ -173,6 +174,23 @@ footer {
     }
 }
 
+@media (max-width: 800px) {
+    footer {
+        small{
+            display: block;
+            float: none;
+            margin-bottom: 1em;
+        }
+        ul {
+            float: none;
+            padding: 0;
+            li {
+                float: none;
+                padding: 0;
+            }
+        }
+    }
+}
 
 /* forms */
 input,
